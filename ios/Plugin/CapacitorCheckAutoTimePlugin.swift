@@ -15,4 +15,9 @@ public class CapacitorCheckAutoTimePlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+
+    @objc func isTimeAutomaticallySet(_ call: CAPPluginCall) {
+        let isAuto = UIDevice.current.isGeneratingDeviceOrientationNotifications
+        call.resolve(["isAutomaticallySet": isAuto])
+    }
 }

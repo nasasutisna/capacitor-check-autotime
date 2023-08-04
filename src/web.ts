@@ -10,4 +10,8 @@ export class CapacitorCheckAutoTimeWeb
     console.log('ECHO', options);
     return options;
   }
+
+  async isTimeAutomaticallySet(): Promise<{ isAutomaticallySet: boolean }> {
+    return { isAutomaticallySet: false }; // Ganti dengan kode untuk mendeteksi pengaturan waktu di iOS
+  }
 }
