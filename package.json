@@ -1,6 +1,6 @@
 {
   "name": "capacitor-check-autotime",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "Plugin check autotime",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

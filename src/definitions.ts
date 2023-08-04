@@ -1,4 +1,3 @@
 export interface CapacitorCheckAutoTimePlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
-  isTimeAutomaticallySet(): Promise<{ isAutomaticallySet: boolean }>;
+  getTimeSettingsInfo(): Promise<{ isAutomaticallySet: boolean; isFormat24Hours: boolean }>;
 }
